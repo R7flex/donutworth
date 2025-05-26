@@ -1,0 +1,30 @@
+name: DonutWorth
+version: '${project.version}'
+main: com.r7flex.donutworth.DonutWorth
+api-version: '1.16'
+depend: [Vault, ProtocolLib]
+authors: [r7flex]
+description: DonutWorth Plugin
+
+commands:
+  donutworth:
+    description: Main command for DonutWorth
+    usage: /donutworth <reload|version|gui>
+    aliases: [dw]
+  sell:
+    description: Sell your items
+    usage: /sell
+
+permissions:
+  donutworth.reload:
+    description: Allows reloading the configuration
+    default: op
+  donutworth.version:
+    description: Allows checking the plugin version
+    default: op
+  donutworth.sell:
+    description: Allows selling items
+    default: true
+  donutworth.gui:
+    description: Allows accessing the admin GUI
+    default: op 
